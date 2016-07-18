@@ -1,0 +1,25 @@
+{
+  "name": "function_chaining",
+  "version": "1.0.0",
+  "description": "practice with backend chaining",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConlanMcNamee/function_chaining.git"
+  },
+  "keywords": [
+    "node.js",
+    "angular",
+    "javascript"
+  ],
+  "author": "Conlan McNamee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ConlanMcNamee/function_chaining/issues"
+  },
+  "homepage": "https://github.com/ConlanMcNamee/function_chaining#readme"
+}
