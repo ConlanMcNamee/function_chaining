@@ -5,8 +5,27 @@
     <title>Practice with Funciton Chaining on the backend</title>
   </head>
   <body ng-controller="chainController as chain">
+    <form>
+      First Name: <input type="string" ng-model="firstName" />
+      Last Name: <input type="string" ng-model="lastName" />
+    </form>
+    <br>
+    <form >
+      Birthday! Day: <input type="number" ng-model="bDay" />
+      Month: <input type="number" ng-model="bMonth" />
+      Year: <input type="number" ng-model="bYear" />
+    </form>
+    <br>
+    <form >
+      Occupation: <input type="string" ng-model="occupation" />
+    </form>
+    <button type="submit" name="SubtmitInfo" ng-click="sendRequest()">Submit These Forms!</button>
     <p>
-      {{test}}
+      {{display.newName}}
+      <br>
+      {{display.randomNumber}}
+      <br>
+      {{display.jobString}}
     </p>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script type="text/javascript" src="./app.js"></script>
