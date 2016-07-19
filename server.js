@@ -5,15 +5,18 @@ var PORT = process.env.PORT || 3000
 var handleData = require('./server_functions/functions.js');
 
 app.use('/', express.static('public'));
+app.use('/chain', function(req, res, next) {
+  req.newData = handleData(req.query);
+  next();
+})
 
 app.get('/chain', function(req, res) {
 
-  //console.log(req.query);
+
   //we pass the data we received from the request to the handleData function
-  var newData = handleData(req.query);
   //console.log(newData);
   //send the proper response with our handled Data
-  res.send({display: newData});
+  res.send({display: req.newData});
 })
 
 
